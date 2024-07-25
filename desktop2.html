@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>title</title>
+    <style>
+        /*for full screen view*/
+        .g1 {
+            background-color: greenyellow;
+            height: 250px;
+            width: 100%;
+        }
+
+        .g234 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            margin-top: 10px;
+            margin-left: 80px;
+        }
+
+        .gi1 {
+            background-color: aqua;
+            width: 80%;
+            height: 320px;
+        }
+
+        .gl {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-top: 10px;
+            margin-left: 140px;
+            gap: 20px;
+        }
+
+        @media screen and (max-width:800px) {    /*for tab view*/
+            .g1 {
+                background-color: greenyellow;
+                height: 250px;
+                width: 100%;
+            }
+
+            .g234 {
+                display: grid;
+                grid-template-columns: auto;
+                gap: 10px;
+                margin-top: 10px;
+                margin-left: 80px;
+            }
+            .gi1 {
+                background-color: aqua;
+                width: 90%;
+                height: 100px;
+            }
+            .gl {
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 10px;
+                margin-left: 140px;
+                gap: 20px;
+            }
+        }
+        @media screen and (max-width:600px) {  /*for mobile view*/
+            .g1 {
+                background-color: greenyellow;
+                height: 250px;
+                width: 100%;
+            }
+
+            .g234 {
+                display: grid;
+                grid-template-columns: auto;
+                gap: 10px;
+                margin-top: 10px;
+                margin-left: ;
+            }
+            .gi1 {
+                background-color: aqua;
+                width: 90%;
+                height: 100px;
+            }
+            .gl {
+                display: block;
+                gap: 10px;
+                margin-top: 10px;
+                margin-left: 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="g1"></div>
+    <div class="g234">
+        <div class="gi1"></div>
+        <div class="gi1"></div>
+        <div class="gi1"></div>
+    </div>
+    <div class="gl">
+        <div style="background-color: wheat;width: 150px;height: 150px;margin-top: 10px;"></div>
+        <div style="background-color: wheat;width: 150px;height: 150px;margin-top: 10px;"></div>
+        <div style="background-color: wheat;width: 150px;height: 150px;margin-top: 10px;"></div>
+        <div style="background-color: wheat;width: 150px;height: 150px;margin-top: 10px;"></div>
+    </div>
+</body>
+
+</html>
